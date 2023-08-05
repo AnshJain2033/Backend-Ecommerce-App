@@ -8,7 +8,11 @@ import cors from 'cors'
 import categoryRoute from './routes/categoryRoute.js'
 import productRoutes from './routes/productRoutes.js'
 import path from 'path'
+import {fileURLToPath}from 'url';
 dotenv.config()
+//es6 fix
+const __filename =fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //rest object
 const app = express()
 //use of middlewares

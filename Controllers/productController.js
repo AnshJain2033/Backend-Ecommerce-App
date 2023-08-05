@@ -384,10 +384,10 @@ export const generateEmailController = async (req, res) => {
       .catch((error) => res.status(500).send(error.message));
 
 
-    res.status(201).send({
-        success: true
-        // myresponse
-    })
+    // res.status(201).send({
+    //     success: true
+    //     response
+    // })
 
   } catch (error) {
     console.log(error)

@@ -385,8 +385,8 @@ export const generateEmailController = async (req, res) => {
 
 
     res.status(201).send({
-        success: true,
-        myresponse
+        success: true
+        // myresponse
     })
 
   } catch (error) {
